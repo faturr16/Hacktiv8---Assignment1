@@ -1,16 +1,18 @@
 package main
 
-import "fmt"
-
-//
+import (
+	"fmt"
+)
 
 func main() {
 
-	nama := "Fatur"
-	umur := 21
-	fmt.Println("nama saya", nama)
-	fmt.Println("umur saya", umur)
+	fmt.Println("Your Full Name :")
+	var nama string
+	fmt.Scanln(&nama)
 
+	fmt.Println("Your Age :")
+	var umur int
+	fmt.Scanln(&umur)
+
+	fmt.Println(nama, umur)
 }
-
-//
