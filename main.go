@@ -91,10 +91,10 @@ func main() {
 		},
 	}
 
-	absen := os.Args[1]
-	for i, v := range murid {
-		indexTostring := strconv.Itoa(i)
-		if indexTostring == absen {
+	absen := os.Args[1]       // command penangkap main.go 1, 2, 3, dst.
+	for i, v := range murid { // command perulangan
+		indexTostring := strconv.Itoa(i) // command konversi angka menjadi kata"
+		if indexTostring == absen {      // command pemanggil
 			fmt.Println(v)
 		}
 
