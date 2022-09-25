@@ -12,7 +12,7 @@ type student struct {
 
 func main() {
 
-	Student := []student{
+	murid := []student{
 		{
 			nama:      "Nama: Fatur\n",
 			alamat:    "Alamat: Depok\n",
@@ -92,10 +92,10 @@ func main() {
 	}
 
 	absen := os.Args[1]
-	for index, value := range Student {
-		indexString := strconv.Itoa(index)
-		if indexString == absen {
-			fmt.Println(value)
+	for i, v := range murid {
+		indexTostring := strconv.Itoa(i)
+		if indexTostring == absen {
+			fmt.Println(v)
 		}
 
 	}
